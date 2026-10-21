@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRUJO · Brujo Games</title>
+<meta name="description" content="BRUJO: juegos para jugar con un dedo, hechos en Colombia.">
+<meta name="theme-color" content="#1a0b33">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a0b33'/%3E%3Cpath d='M16 45 L27 17 Q30 8 41 4 Q35 11 35.5 18 L48 45 Z' fill='%23b8ff2e'/%3E%3Crect x='7' y='44' width='50' height='8' rx='4' fill='%23b8ff2e'/%3E%3Cpath d='M19.6 37 L44.4 37 L46.2 41.5 L17.8 41.5 Z' fill='%231a0b33'/%3E%3Cpath d='M31 22.5 l1.6 3.3 3.6.5 -2.6 2.5 .6 3.6 -3.2-1.7 -3.2 1.7 .6-3.6 -2.6-2.5 3.6-.5 z' fill='%231a0b33'/%3E%3C/svg%3E">
+<style>
+  :root { --bg: #1a0b33; --bg2: #24124a; --ink: #f6f2ff; --muted: #b9addb; --line: #3a2768; --magic: #b8ff2e; --card: #22113f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: radial-gradient(1200px 600px at 80% -10%, #3b1a73 0%, transparent 60%), var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; min-height: 100vh; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 64px; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .brand svg { width: 64px; height: 64px; flex: none; }
+  h1 { margin: 0; font-size: clamp(56px, 16vw, 96px); line-height: 0.9; font-weight: 900; letter-spacing: 0.02em; }
+  .tag { color: var(--muted); font-size: 19px; margin: 14px 0 44px; }
+  .tag b { color: var(--magic); font-weight: 700; }
+  .game { display: flex; gap: 18px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 18px; }
+  .game img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  .game h2 { margin: 0 0 2px; font-size: 22px; }
+  .game p { margin: 0; color: var(--muted); }
+  .pill { display: inline-block; margin-top: 10px; font-size: 14px; font-weight: 700; padding: 5px 12px; border-radius: 99px; background: var(--magic); color: #1a0b33; }
+  .links { margin-top: 10px; font-size: 15px; }
+  a { color: var(--magic); }
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+  @media (max-width: 480px) { .game { flex-direction: column; align-items: flex-start; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <path d="M16 45 L27 17 Q30 8 41 4 Q35 11 35.5 18 L48 45 Z" fill="#b8ff2e"/><rect x="7" y="44" width="50" height="8" rx="4" fill="#b8ff2e"/><path d="M19.6 37 L44.4 37 L46.2 41.5 L17.8 41.5 Z" fill="#1a0b33"/><path d="M31 22.5 l1.6 3.3 3.6.5 -2.6 2.5 .6 3.6 -3.2-1.7 -3.2 1.7 .6-3.6 -2.6-2.5 3.6-.5 z" fill="#1a0b33"/>
+    </svg>
+    <h1>BRUJO</h1>
+  </div>
+  <p class="tag">Juegos para jugar con un dedo. <b>Hechos en Colombia.</b></p>
+
+  <section class="game">
+    <img src="montonera.png" alt="Ícono de Montonera">
+    <div>
+      <h2>Montonera</h2>
+      <p>Junta tu ejército, cruza puertas, mejora tus armas y gana batallas épicas.</p>
+      <span class="pill">Muy pronto en Google Play</span>
+      <div class="links"><a href="privacidad.html">Política de privacidad</a></div>
+    </div>
+  </section>
+
+  <footer>
+    Brujo Games · Contacto: <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
