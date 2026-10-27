@@ -4,60 +4,399 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Brujitos · Política de privacidad · Brujo Games</title>
+<meta name="description" content="Qué datos usa Brujitos en Android y iPhone, para qué y cómo borrarlos.">
 <style>
-  body { margin: 0; background: #f5f8ff; color: #1b2147; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  :root { --bg: #f5f8ff; --text: #1b2147; --muted: #5a6190; --link: #1b5fd0; --box: #e6edff; --line: #cfd8f5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11152b; --text: #e8ebff; --muted: #a4abd6; --link: #8db4ff; --box: #1c2244; --line: #2c3566; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
   h1 { font-size: 28px; line-height: 1.2; margin: 0 0 4px; }
   h2 { font-size: 19px; margin: 28px 0 6px; }
-  .meta { color: #5a6190; margin: 0 0 24px; }
-  a { color: #1b5fd0; }
+  .lang { font-size: 24px; margin: 56px 0 4px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .box { background: var(--box); border-radius: 12px; padding: 4px 18px; margin: 0 0 8px; }
+  .box ul { padding-left: 20px; }
+  a { color: var(--link); overflow-wrap: anywhere; }
   li { margin: 4px 0; }
 </style>
 </head>
 <body>
 <main>
   <p class="meta"><a href="../">← BRUJO · Brujo Games</a></p>
+
+  <!-- ====================================================== ESPAÑOL -->
+  <section id="es" lang="es">
   <h1>Política de privacidad de Brujitos</h1>
-  <p class="meta">Última actualización: 21 de octubre de 2026</p>
+  <p class="meta">Última actualización y vigencia: 27 de octubre de 2026 · <a href="#en">English</a> · <a href="#pt">Português</a></p>
 
-  <p>Esta política explica qué datos se usan cuando juegas <b>Brujitos</b> (la "app"), publicada por <b>Brujo Games</b> ("nosotros").</p>
+  <p>Esta política explica qué datos se usan cuando juegas <b>Brujitos</b> (la "app") en <b>Android</b> (Google Play) o en <b>iPhone</b> (App Store). La app la publica <b>Brujo Games</b> ("nosotros"), con domicilio en Colombia, que es el responsable de esos datos. Puedes escribirnos cuando quieras a <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a>.</p>
 
-  <h2>1. Datos que guardamos nosotros</h2>
-  <p>No pedimos registro, nombre, correo ni ningún dato personal. Tu progreso (nivel, monedas, stickers, potenciadores y ajustes de sonido y vibración) se guarda únicamente en tu teléfono. No lo enviamos a ningún servidor propio. Si desinstalas la app, ese progreso se borra.</p>
+  <div class="box">
+    <p><b>En resumen</b></p>
+    <ul>
+      <li>No pedimos cuenta, nombre ni correo, y no tenemos servidores propios: tu partida se guarda en tu teléfono.</li>
+      <li>No vendemos tus datos.</li>
+      <li>Los anuncios, las estadísticas y los pagos funcionan con servicios de Google y de Apple, que reciben algunos datos técnicos. Aquí te contamos cuáles.</li>
+      <li>Tú decides: en iPhone puedes negar el rastreo, en Europa puedes negar los anuncios personalizados y, desde cualquier país, puedes pedirnos que borremos tus estadísticas.</li>
+    </ul>
+  </div>
 
-  <h2>2. Publicidad (Google AdMob)</h2>
-  <p>La app muestra anuncios mediante Google AdMob, un servicio de Google LLC. Para mostrar anuncios y medir su rendimiento, AdMob puede recopilar y procesar:</p>
+  <h2>1. Lo que se guarda en tu teléfono</h2>
+  <p>Tu progreso (niveles, monedas, estrellas, stickers y álbumes, potenciadores, la Torre del Brujo, tu ropa del Vestidor, la historia, los eventos y tus ajustes) se guarda en tu propio teléfono. No lo enviamos a ningún servidor nuestro.</p>
   <ul>
-    <li>El identificador de publicidad de tu dispositivo (ID de publicidad de Android).</li>
-    <li>Tu dirección IP y la ubicación aproximada que se deduce de ella.</li>
+    <li><b>Android:</b> si tienes activada la copia de seguridad de tu cuenta de Google, Android puede incluir ese progreso en tu copia.</li>
+    <li><b>iPhone:</b> si usas copias de seguridad de iCloud o de tu computadora, el iPhone puede incluir ese progreso en la copia.</li>
+  </ul>
+  <p>Si desinstalas la app, el progreso se borra del teléfono, salvo lo que esté en una copia de seguridad.</p>
+
+  <h2>2. Información del teléfono que se usa dentro del juego</h2>
+  <ul>
+    <li><b>Fiestas de tu país:</b> la app mira el idioma, la región y la zona horaria configurados en el teléfono para mostrarte las fiestas que te corresponden. No pide tu ubicación. El país que resulta también va, sin tu nombre, en las estadísticas del punto 4.</li>
+    <li><b>Fecha y hora del teléfono:</b> para el regalo diario, el reto del día, la racha, los eventos y las monedas dobles del fin de semana. No se envían a ningún lado.</li>
+    <li><b>Rivales de los eventos:</b> los de la Carrera de brujos y la Liga semanal los simula la app. No hay otros jugadores y no se comparte nada tuyo.</li>
+  </ul>
+
+  <h2>3. Publicidad (Google AdMob)</h2>
+  <p>La app muestra anuncios de Google AdMob, un servicio de Google LLC: anuncios entre niveles y anuncios con premio que solo ves si tú los eliges. Para mostrar anuncios, medirlos y evitar fraudes, AdMob puede recopilar:</p>
+  <ul>
+    <li>El identificador de publicidad del dispositivo: en Android, el ID de publicidad; en iPhone, el identificador de publicidad de Apple (IDFA), <b>solo si permites el rastreo</b> (punto 9).</li>
+    <li>Identificadores que solo funcionan dentro de las apps de un mismo desarrollador, como el ID de conjunto de apps de Android o el identificador para el proveedor de Apple.</li>
+    <li>Tu dirección IP y la ubicación aproximada que se deduce de ella (nunca tu ubicación exacta).</li>
     <li>Información del dispositivo, como modelo, sistema operativo, idioma y operador.</li>
-    <li>Interacciones con los anuncios (impresiones y toques) y datos de diagnóstico.</li>
+    <li>Tus interacciones con los anuncios (cuáles se muestran y cuáles tocas) y datos de diagnóstico y rendimiento (por ejemplo, cuánto tarda en abrir la app o si un anuncio falla).</li>
   </ul>
-  <p>Google trata estos datos según su propia política: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Puedes ver cómo usa Google los datos de las apps que usan sus servicios en <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+  <p>En iPhone, los anuncios también pueden medirse con SKAdNetwork, el sistema de Apple que mide los anuncios sin identificar a la persona.</p>
+  <p>Si compras "Sin anuncios", la app deja de mostrar anuncios entre niveles; los anuncios con premio siguen disponibles solo si tú decides verlos.</p>
 
-  <h2>3. Compras dentro de la app</h2>
-  <p>Si compras algo dentro del juego (por ejemplo, monedas o quitar los anuncios), el pago lo hace <b>Google Play</b>. Nosotros nunca vemos tu tarjeta ni tus datos de pago: solo recibimos la confirmación de Google para entregarte lo que compraste. Google trata esos datos según su política de privacidad.</p>
-
-  <h2>4. Tu consentimiento y tus opciones</h2>
+  <h2>4. Estadísticas (Google Analytics para Firebase)</h2>
+  <p>Para saber qué partes del juego gustan, qué niveles son demasiado difíciles y si cada actualización es mejor que la anterior, la app usa Google Analytics para Firebase, un servicio de Google LLC que trabaja por encargo nuestro, en Android y en iPhone. Puede recopilar:</p>
   <ul>
-    <li>Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, la app te pide tu consentimiento antes de mostrar anuncios personalizados. Puedes cambiar tu elección en <b>Ajustes → Privacidad de anuncios</b> dentro del juego.</li>
-    <li>En cualquier país puedes restablecer o eliminar tu ID de publicidad, o desactivar la personalización de anuncios, desde los ajustes de Android: <b>Ajustes → Privacidad → Anuncios</b> (o <b>Google → Anuncios</b>, según el teléfono).</li>
+    <li>Identificadores de la instalación de la app (y, en iPhone, el identificador para el proveedor). En algunos casos también el identificador de publicidad; en iPhone, solo si permites el rastreo. No incluyen tu nombre ni tu correo.</li>
+    <li>Lo que haces en el juego: cuándo abres la app, qué niveles empiezas y cómo terminan (ganado, perdido o dejado), cuánto tardas y cuánto del dibujo alcanzas a romper, el modo de juego, anuncios vistos y compras hechas (qué producto y su precio, sin ningún dato de pago).</li>
+    <li>El idioma y el país configurados en el teléfono, información del dispositivo (modelo y sistema operativo) y la región aproximada, deducida de la IP.</li>
+  </ul>
+  <p>Vemos estos datos solo en conjunto (por ejemplo, "el 30 % de los jugadores pierde en el nivel 12") y los usamos solo para mejorar el juego. No los usamos para mostrarte anuncios ni los unimos a datos de otras empresas.</p>
+
+  <h2>5. Compras dentro de la app</h2>
+  <p>Las compras (por ejemplo, "Sin anuncios", el Pack de bienvenida o los paquetes de monedas) se pagan con el sistema de la tienda: <b>Google Play</b> en Android y el <b>App Store de Apple</b> en iPhone. Nunca vemos tu tarjeta, tu cuenta de Google, tu ID de Apple ni tus datos de pago: solo recibimos la confirmación de la compra (qué producto, cuándo y un número de transacción) para entregarte lo que compraste.</p>
+  <p>Si reinstalas o cambias de teléfono, "Sin anuncios" y el Pack de bienvenida vuelven solos. También puedes tocar <b>Restaurar compras</b> en los Ajustes del juego, que se las pide a la tienda. Las monedas ya entregadas viven en tu partida (punto 1).</p>
+
+  <h2>6. Avisos en el teléfono</h2>
+  <p>Si aceptas, la app programa en tu propio teléfono como máximo un aviso al día (por ejemplo, cuando tu regalo diario está listo o empieza una carrera). No se envían desde ningún servidor. Puedes quitarlos cuando quieras en los ajustes del teléfono: en Android, <b>Ajustes → Aplicaciones → Brujitos → Notificaciones</b>; en iPhone, <b>Ajustes → Notificaciones → Brujitos</b>.</p>
+
+  <h2>7. Quién recibe datos</h2>
+  <ul>
+    <li><b>Google LLC</b> (AdMob, Firebase y Google Play). Su política: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Cómo usa Google los datos de las apps que usan sus servicios: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</li>
+    <li><b>Apple Inc.</b> (App Store, compras, copias de iCloud y SKAdNetwork en iPhone). Su política: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
+  </ul>
+  <p>Firebase trabaja por encargo nuestro, y AdMob y Google Play usan además los datos según la política de Google. Google se compromete, en sus condiciones de protección de datos con nosotros, a proteger los datos con un nivel igual o mayor que el de esta política. Apple trata los datos de las compras y de las copias de seguridad directamente contigo, según su propia política. No damos tus datos a nadie más.</p>
+
+  <h2>8. Para qué usamos los datos y con qué permiso</h2>
+  <ul>
+    <li><b>Hacer funcionar el juego y las compras:</b> porque son parte del servicio que tú pides al jugar o comprar.</li>
+    <li><b>Estadísticas:</b> por nuestro interés legítimo en arreglar errores y mejorar el juego, usando datos sin nombre.</li>
+    <li><b>Anuncios:</b> para financiar el juego gratis. Los anuncios personalizados se muestran solo con tu consentimiento donde la ley lo exige, y en iPhone el rastreo solo ocurre si tú lo permites (punto 9).</li>
+    <li><b>Seguridad:</b> por nuestro interés legítimo en detectar fraudes con los anuncios y las compras.</li>
   </ul>
 
-  <h2>5. Niños</h2>
+  <h2>9. Tus opciones</h2>
+  <ul>
+    <li><b>iPhone, rastreo:</b> la primera vez que abres el juego, el iPhone te pregunta si permites que Brujitos rastree tu actividad en apps y sitios web de otras empresas. Si dices que no, ni AdMob ni Firebase pueden usar tu identificador de publicidad, y el juego funciona igual. Puedes cambiarlo cuando quieras en <b>Ajustes → Privacidad y seguridad → Rastreo</b>.</li>
+    <li><b>Espacio Económico Europeo, Reino Unido y Suiza:</b> la app te pide tu consentimiento antes de mostrar anuncios personalizados. Puedes cambiar tu elección en <b>Ajustes → Privacidad de anuncios</b>, dentro del juego.</li>
+    <li><b>Android, ID de publicidad:</b> puedes restablecerlo o eliminarlo, o desactivar la personalización de anuncios, en <b>Ajustes → Privacidad → Anuncios</b> (o <b>Google → Anuncios</b>, según el teléfono).</li>
+    <li>Puedes jugar sin aceptar los avisos.</li>
+  </ul>
+
+  <h2>10. Cuánto tiempo se guardan</h2>
+  <ul>
+    <li>El progreso en tu teléfono: hasta que desinstales la app o borres sus datos (y en las copias de seguridad, hasta que las borres).</li>
+    <li>Las estadísticas de Firebase: como máximo 14 meses.</li>
+    <li>Los datos de publicidad y de compras: según los plazos de Google y de Apple, descritos en sus políticas.</li>
+  </ul>
+
+  <h2>11. Dónde se procesan</h2>
+  <p>Google y Apple pueden procesar estos datos en servidores fuera de tu país, incluido Estados Unidos, con las garantías que describen en sus políticas de privacidad.</p>
+
+  <h2>12. Tus derechos y cómo borrar tus datos</h2>
+  <p>Vivas donde vivas, puedes pedirnos acceder a tus datos, corregirlos, borrarlos, oponerte a su uso o retirar tu consentimiento. Así:</p>
+  <ul>
+    <li><b>Progreso en el teléfono:</b> desinstala la app. En Android también puedes borrar sus datos en <b>Ajustes → Aplicaciones → Brujitos → Almacenamiento</b>.</li>
+    <li><b>Copias de seguridad:</b> bórralas desde tu cuenta de Google (Android) o en <b>Ajustes → [tu nombre] → iCloud</b> (iPhone).</li>
+    <li><b>Estadísticas:</b> escríbenos al correo de contacto y las borraremos. Como no sabemos quién eres, te pediremos un dato que nos ayude a encontrarlas (por ejemplo, la fecha en que instalaste la app y el modelo de tu teléfono).</li>
+    <li><b>Publicidad y rastreo:</b> usa las opciones del punto 9.</li>
+  </ul>
+  <p>Respondemos las consultas en un máximo de 10 días hábiles, y los pedidos de corrección o borrado en un máximo de 15 días hábiles. Si crees que no atendimos bien tu pedido, también puedes acudir a la autoridad de protección de datos de tu país.</p>
+
+  <h2>13. Según tu país</h2>
+  <ul>
+    <li><b>Colombia (Ley 1581 de 2012):</b> como titular de los datos puedes conocerlos, actualizarlos y rectificarlos, pedir prueba de tu autorización, saber cómo se usan, revocar la autorización o pedir que se borren, y presentar quejas ante la Superintendencia de Industria y Comercio (SIC) después de haberte comunicado con nosotros. Atendemos tus consultas y reclamos en el correo de contacto, en los plazos del punto 12.</li>
+    <li><b>Brasil (LGPD):</b> tienes los derechos del artículo 18 de la LGPD, entre ellos confirmar si tratamos tus datos, acceder a ellos, corregirlos, anonimizarlos o eliminarlos, llevarlos a otro servicio, saber con quién se comparten y revocar tu consentimiento. También puedes acudir a la ANPD. Nuestro canal de atención es el correo de contacto.</li>
+    <li><b>Espacio Económico Europeo, Reino Unido y Suiza (RGPD):</b> además de los derechos del punto 12, tienes derecho a la portabilidad y a limitar el uso de tus datos, y puedes reclamar ante tu autoridad de protección de datos.</li>
+    <li><b>Estados Unidos (California y otros estados con leyes de privacidad):</b> no vendemos tus datos a cambio de dinero. Según algunas de esas leyes, los anuncios personalizados de AdMob pueden contar como "compartir" datos para publicidad; puedes evitarlo negando el rastreo en iPhone o eliminando tu ID de publicidad en Android. También puedes pedirnos saber qué datos tenemos o que los borremos, y no te trataremos distinto por hacerlo.</li>
+  </ul>
+
+  <h2>14. Niños</h2>
   <p>La app no está dirigida a menores de 13 años y no recopilamos a sabiendas datos de menores de esa edad. Si crees que un menor nos envió datos, escríbenos y los eliminaremos.</p>
 
-  <h2>6. Borrar tus datos</h2>
-  <p>Como no tenemos cuentas ni servidores, no guardamos nada tuyo. Para borrar tu progreso basta con desinstalar la app o borrar sus datos desde los ajustes de Android. Para los datos de publicidad, usa las opciones del punto 4.</p>
+  <h2>15. Seguridad</h2>
+  <p>Toda la comunicación con los servicios de Google y de Apple viaja cifrada (HTTPS), y no guardamos datos de los jugadores en servidores propios.</p>
 
-  <h2>7. Seguridad</h2>
-  <p>Toda la comunicación con los servicios de anuncios y de pagos viaja cifrada (HTTPS).</p>
+  <h2>16. Cambios</h2>
+  <p>Si cambiamos esta política, publicaremos la nueva versión en esta misma página con su fecha de actualización. Si el cambio es importante, también lo avisaremos dentro del juego.</p>
 
-  <h2>8. Cambios</h2>
-  <p>Si cambiamos esta política, publicaremos la nueva versión en esta misma página con su fecha de actualización.</p>
+  <h2>17. Contacto</h2>
+  <p>Brujo Games · Colombia · <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a></p>
+  </section>
 
-  <h2>9. Contacto</h2>
-  <p>Para cualquier pregunta sobre privacidad: <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a></p>
+  <!-- ====================================================== ENGLISH -->
+  <section id="en" lang="en">
+  <h2 class="lang">Brujitos Privacy Policy</h2>
+  <p class="meta">Last updated and effective: October 27, 2026 · <a href="#es">Español</a> · <a href="#pt">Português</a></p>
+
+  <p>This policy explains what data is used when you play <b>Brujitos</b> (the "app") on <b>Android</b> (Google Play) or <b>iPhone</b> (App Store). The app is published by <b>Brujo Games</b> ("we"), based in Colombia, which is responsible for this data. You can write to us at any time at <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a>.</p>
+
+  <div class="box">
+    <p><b>In short</b></p>
+    <ul>
+      <li>We don't ask for an account, your name or your email, and we have no servers of our own: your progress is saved on your phone.</li>
+      <li>We don't sell your data.</li>
+      <li>Ads, statistics and payments run on Google and Apple services, which receive some technical data. This page explains which.</li>
+      <li>You decide: on iPhone you can deny tracking, in Europe you can refuse personalized ads, and from any country you can ask us to delete your statistics.</li>
+    </ul>
+  </div>
+
+  <h2>1. What is saved on your phone</h2>
+  <p>Your progress (levels, coins, stars, stickers and albums, boosters, the Wizard's Tower, your Wardrobe outfits, the story, events and settings) is saved on your own phone. We don't send it to any server of ours.</p>
+  <ul>
+    <li><b>Android:</b> if your Google account backup is on, Android may include this progress in your backup.</li>
+    <li><b>iPhone:</b> if you use iCloud or computer backups, your iPhone may include this progress in the backup.</li>
+  </ul>
+  <p>If you uninstall the app, your progress is deleted from the phone, except what is in a backup.</p>
+
+  <h2>2. Phone information used inside the game</h2>
+  <ul>
+    <li><b>Holidays in your country:</b> the app reads the language, region and time zone set on your phone to show the holidays that apply to you. It doesn't ask for your location. The resulting country is also included, without your name, in the statistics in section 4.</li>
+    <li><b>Your phone's date and time:</b> for the daily gift, the daily challenge, streaks, events and double-coin weekends. They aren't sent anywhere.</li>
+    <li><b>Event rivals:</b> the rivals in the Wizard Race and the Weekly League are simulated by the app. There are no other players and nothing of yours is shared.</li>
+  </ul>
+
+  <h2>3. Advertising (Google AdMob)</h2>
+  <p>The app shows ads from Google AdMob, a service of Google LLC: ads between levels, and rewarded ads that you only see if you choose to. To show and measure ads and to prevent fraud, AdMob may collect:</p>
+  <ul>
+    <li>Your device's advertising identifier: the advertising ID on Android; on iPhone, Apple's Identifier for Advertisers (IDFA), <b>only if you allow tracking</b> (section 9).</li>
+    <li>Identifiers that only work across apps from the same developer, such as Android's app set ID or Apple's identifier for vendors.</li>
+    <li>Your IP address and the approximate location derived from it (never your precise location).</li>
+    <li>Device information, such as model, operating system, language and carrier.</li>
+    <li>Your interactions with ads (which ones are shown and which ones you tap) and diagnostic and performance data (for example, how long the app takes to open or whether an ad fails).</li>
+  </ul>
+  <p>On iPhone, ads may also be measured with SKAdNetwork, Apple's system that measures ads without identifying the person.</p>
+  <p>If you buy "No ads", the app stops showing ads between levels; rewarded ads remain available only if you decide to watch them.</p>
+
+  <h2>4. Statistics (Google Analytics for Firebase)</h2>
+  <p>To learn which parts of the game people enjoy, which levels are too hard, and whether each update is better than the last, the app uses Google Analytics for Firebase, a service of Google LLC that works on our behalf, on Android and iPhone. It may collect:</p>
+  <ul>
+    <li>App installation identifiers (and, on iPhone, the identifier for vendors). In some cases also the advertising identifier; on iPhone, only if you allow tracking. They don't include your name or email.</li>
+    <li>What you do in the game: when you open the app, which levels you start and how they end (won, lost or left), how long they take and how much of the picture you clear, the game mode, ads watched and purchases made (which product and its price, without any payment details).</li>
+    <li>The language and country set on your phone, device information (model and operating system) and the approximate region, derived from the IP address.</li>
+  </ul>
+  <p>We only look at this data in aggregate (for example, "30% of players lose at level 12") and use it only to improve the game. We don't use it to show you ads or combine it with data from other companies.</p>
+
+  <h2>5. In-app purchases</h2>
+  <p>Purchases (for example, "No ads", the Welcome Pack or coin packs) are paid through the store's own system: <b>Google Play</b> on Android and Apple's <b>App Store</b> on iPhone. We never see your card, your Google account, your Apple ID or your payment details: we only receive the purchase confirmation (which product, when, and a transaction number) to deliver what you bought.</p>
+  <p>If you reinstall or change phones, "No ads" and the Welcome Pack come back on their own. You can also tap <b>Restore purchases</b> in the game's Settings, which requests them from the store. Coins already delivered live in your progress (section 1).</p>
+
+  <h2>6. Notifications</h2>
+  <p>If you allow them, the app schedules at most one reminder a day on your own phone (for example, when your daily gift is ready or a race starts). They aren't sent from any server. You can turn them off at any time in your phone settings: on Android, <b>Settings → Apps → Brujitos → Notifications</b>; on iPhone, <b>Settings → Notifications → Brujitos</b>.</p>
+
+  <h2>7. Who receives data</h2>
+  <ul>
+    <li><b>Google LLC</b> (AdMob, Firebase and Google Play). Its policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. How Google uses data from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</li>
+    <li><b>Apple Inc.</b> (App Store, purchases, iCloud backups and SKAdNetwork on iPhone). Its policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
+  </ul>
+  <p>Firebase works on our behalf, and AdMob and Google Play also use data under Google's policy. Google commits, in its data protection terms with us, to protect data at a level equal to or higher than this policy. Apple handles purchase and backup data directly with you, under its own policy. We don't give your data to anyone else.</p>
+
+  <h2>8. Why we use data and our legal bases</h2>
+  <ul>
+    <li><b>Running the game and purchases:</b> they are part of the service you request when you play or buy (contract).</li>
+    <li><b>Statistics:</b> our legitimate interest in fixing bugs and improving the game, using data without names.</li>
+    <li><b>Ads:</b> to fund the free game. Personalized ads are shown only with your consent where the law requires it, and on iPhone tracking only happens if you allow it (section 9).</li>
+    <li><b>Security:</b> our legitimate interest in detecting fraud with ads and purchases.</li>
+  </ul>
+
+  <h2>9. Your choices</h2>
+  <ul>
+    <li><b>iPhone, tracking:</b> the first time you open the game, your iPhone asks whether you allow Brujitos to track your activity across other companies' apps and websites. If you say no, neither AdMob nor Firebase can use your advertising identifier, and the game works the same. You can change it at any time in <b>Settings → Privacy &amp; Security → Tracking</b>.</li>
+    <li><b>European Economic Area, United Kingdom and Switzerland:</b> the app asks for your consent before showing personalized ads. You can change your choice in <b>Settings → Ad privacy</b>, inside the game.</li>
+    <li><b>Android, advertising ID:</b> you can reset or delete it, or turn off ad personalization, in <b>Settings → Privacy → Ads</b> (or <b>Google → Ads</b>, depending on the phone).</li>
+    <li>You can play without allowing notifications.</li>
+  </ul>
+
+  <h2>10. How long data is kept</h2>
+  <ul>
+    <li>Progress on your phone: until you uninstall the app or clear its data (and in backups, until you delete them).</li>
+    <li>Firebase statistics: up to 14 months.</li>
+    <li>Advertising and purchase data: according to Google's and Apple's retention periods, described in their policies.</li>
+  </ul>
+
+  <h2>11. Where data is processed</h2>
+  <p>Google and Apple may process this data on servers outside your country, including the United States, with the safeguards described in their privacy policies.</p>
+
+  <h2>12. Your rights and how to delete your data</h2>
+  <p>Wherever you live, you can ask us to access, correct or delete your data, object to its use, or withdraw your consent. Here's how:</p>
+  <ul>
+    <li><b>Progress on your phone:</b> uninstall the app. On Android you can also clear its data in <b>Settings → Apps → Brujitos → Storage</b>.</li>
+    <li><b>Backups:</b> delete them from your Google account (Android) or in <b>Settings → [your name] → iCloud</b> (iPhone).</li>
+    <li><b>Statistics:</b> email us and we will delete them. Since we don't know who you are, we will ask for a detail that helps us find them (for example, the date you installed the app and your phone model).</li>
+    <li><b>Advertising and tracking:</b> use the options in section 9.</li>
+  </ul>
+  <p>We answer questions within 10 business days and correction or deletion requests within 15 business days. If you believe we didn't handle your request properly, you can also contact the data protection authority in your country.</p>
+
+  <h2>13. Depending on your country</h2>
+  <ul>
+    <li><b>United States (California and other states with privacy laws):</b> we don't sell your data for money. Under some of these laws, AdMob personalized ads may count as "sharing" data for advertising; you can opt out by denying tracking on iPhone or deleting your advertising ID on Android. You can also ask us what data we have or ask us to delete it, and we won't treat you differently for doing so.</li>
+    <li><b>Colombia (Law 1581 of 2012):</b> as the data subject you can know, update and correct your data, request proof of your authorization, learn how it is used, revoke the authorization or request deletion, and file complaints with the Superintendence of Industry and Commerce (SIC) after contacting us. We handle your inquiries and claims at the contact email, within the time limits in section 12.</li>
+    <li><b>Brazil (LGPD):</b> you have the rights in Article 18 of the LGPD, including confirming whether we process your data, accessing, correcting, anonymizing or deleting it, porting it to another service, learning who it is shared with, and revoking your consent. You may also contact the ANPD. Our service channel is the contact email.</li>
+    <li><b>European Economic Area, United Kingdom and Switzerland (GDPR):</b> in addition to the rights in section 12, you have the right to data portability and to restrict processing, and you may lodge a complaint with your data protection authority.</li>
+  </ul>
+
+  <h2>14. Children</h2>
+  <p>The app is not directed to children under 13, and we don't knowingly collect data from children under that age. If you believe a child has sent us data, write to us and we will delete it.</p>
+
+  <h2>15. Security</h2>
+  <p>All communication with Google and Apple services is encrypted (HTTPS), and we don't store player data on servers of our own.</p>
+
+  <h2>16. Changes</h2>
+  <p>If we change this policy, we will publish the new version on this same page with its update date. If the change is important, we will also announce it inside the game.</p>
+
+  <h2>17. Contact</h2>
+  <p>Brujo Games · Colombia · <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a></p>
+  </section>
+
+  <!-- ====================================================== PORTUGUÊS -->
+  <section id="pt" lang="pt-BR">
+  <h2 class="lang">Política de privacidade do Brujitos</h2>
+  <p class="meta">Última atualização e vigência: 27 de outubro de 2026 · <a href="#es">Español</a> · <a href="#en">English</a></p>
+
+  <p>Esta política explica quais dados são usados quando você joga <b>Brujitos</b> (o "app") no <b>Android</b> (Google Play) ou no <b>iPhone</b> (App Store). O app é publicado pela <b>Brujo Games</b> ("nós"), com sede na Colômbia, responsável por esses dados. Você pode nos escrever quando quiser em <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a>.</p>
+
+  <div class="box">
+    <p><b>Em resumo</b></p>
+    <ul>
+      <li>Não pedimos conta, nome nem e-mail, e não temos servidores próprios: seu progresso fica salvo no seu celular.</li>
+      <li>Não vendemos seus dados.</li>
+      <li>Os anúncios, as estatísticas e os pagamentos funcionam com serviços do Google e da Apple, que recebem alguns dados técnicos. Aqui explicamos quais.</li>
+      <li>Você decide: no iPhone pode negar o rastreamento, na Europa pode recusar anúncios personalizados e, de qualquer país, pode nos pedir para apagar suas estatísticas.</li>
+    </ul>
+  </div>
+
+  <h2>1. O que fica salvo no seu celular</h2>
+  <p>Seu progresso (níveis, moedas, estrelas, figurinhas e álbuns, poderes, a Torre do Bruxo, suas roupas do Guarda-roupa, a história, os eventos e os ajustes) fica salvo no seu próprio celular. Não o enviamos a nenhum servidor nosso.</p>
+  <ul>
+    <li><b>Android:</b> se o backup da sua conta Google estiver ativado, o Android pode incluir esse progresso no seu backup.</li>
+    <li><b>iPhone:</b> se você usa backups do iCloud ou do computador, o iPhone pode incluir esse progresso no backup.</li>
+  </ul>
+  <p>Se você desinstalar o app, o progresso é apagado do celular, exceto o que estiver em um backup.</p>
+
+  <h2>2. Informações do celular usadas dentro do jogo</h2>
+  <ul>
+    <li><b>Feriados do seu país:</b> o app olha o idioma, a região e o fuso horário configurados no celular para mostrar os feriados que valem para você. Ele não pede sua localização. O país resultante também vai, sem o seu nome, nas estatísticas do item 4.</li>
+    <li><b>Data e hora do celular:</b> para o presente diário, o desafio do dia, a sequência, os eventos e as moedas em dobro do fim de semana. Elas não são enviadas a lugar nenhum.</li>
+    <li><b>Rivais dos eventos:</b> os rivais da Corrida de Bruxos e da Liga Semanal são simulados pelo app. Não há outros jogadores e nada seu é compartilhado.</li>
+  </ul>
+
+  <h2>3. Publicidade (Google AdMob)</h2>
+  <p>O app mostra anúncios do Google AdMob, um serviço do Google LLC: anúncios entre os níveis e anúncios com prêmio, que você só vê se quiser. Para exibir e medir anúncios e evitar fraudes, o AdMob pode coletar:</p>
+  <ul>
+    <li>O identificador de publicidade do aparelho: no Android, o ID de publicidade; no iPhone, o identificador de publicidade da Apple (IDFA), <b>só se você permitir o rastreamento</b> (item 9).</li>
+    <li>Identificadores que só funcionam entre apps do mesmo desenvolvedor, como o ID do conjunto de apps do Android ou o identificador para o fornecedor da Apple.</li>
+    <li>Seu endereço IP e a localização aproximada deduzida dele (nunca sua localização exata).</li>
+    <li>Informações do aparelho, como modelo, sistema operacional, idioma e operadora.</li>
+    <li>Suas interações com os anúncios (quais aparecem e quais você toca) e dados de diagnóstico e desempenho (por exemplo, quanto tempo o app leva para abrir ou se um anúncio falha).</li>
+  </ul>
+  <p>No iPhone, os anúncios também podem ser medidos com o SKAdNetwork, o sistema da Apple que mede anúncios sem identificar a pessoa.</p>
+  <p>Se você comprar "Sem anúncios", o app deixa de mostrar anúncios entre os níveis; os anúncios com prêmio continuam disponíveis só se você quiser vê-los.</p>
+
+  <h2>4. Estatísticas (Google Analytics para Firebase)</h2>
+  <p>Para saber de quais partes do jogo as pessoas gostam, quais níveis são difíceis demais e se cada atualização é melhor que a anterior, o app usa o Google Analytics para Firebase, um serviço do Google LLC que trabalha por nossa conta, no Android e no iPhone. Ele pode coletar:</p>
+  <ul>
+    <li>Identificadores da instalação do app (e, no iPhone, o identificador para o fornecedor). Em alguns casos também o identificador de publicidade; no iPhone, só se você permitir o rastreamento. Não incluem seu nome nem seu e-mail.</li>
+    <li>O que você faz no jogo: quando abre o app, quais níveis começa e como terminam (ganho, perdido ou abandonado), quanto tempo levam e quanto do desenho você consegue quebrar, o modo de jogo, anúncios vistos e compras feitas (qual produto e seu preço, sem nenhum dado de pagamento).</li>
+    <li>O idioma e o país configurados no celular, informações do aparelho (modelo e sistema operacional) e a região aproximada, deduzida do IP.</li>
+  </ul>
+  <p>Só olhamos esses dados em conjunto (por exemplo, "30% dos jogadores perdem no nível 12") e os usamos apenas para melhorar o jogo. Não os usamos para mostrar anúncios nem os juntamos com dados de outras empresas.</p>
+
+  <h2>5. Compras no app</h2>
+  <p>As compras (por exemplo, "Sem anúncios", o Pacote de boas-vindas ou os pacotes de moedas) são pagas pelo sistema da loja: <b>Google Play</b> no Android e <b>App Store</b> da Apple no iPhone. Nunca vemos seu cartão, sua conta Google, seu ID Apple nem seus dados de pagamento: só recebemos a confirmação da compra (qual produto, quando e um número de transação) para entregar o que você comprou.</p>
+  <p>Se você reinstalar ou trocar de celular, o "Sem anúncios" e o Pacote de boas-vindas voltam sozinhos. Você também pode tocar em <b>Restaurar compras</b> nos Ajustes do jogo, que as pede à loja. As moedas já entregues ficam no seu progresso (item 1).</p>
+
+  <h2>6. Notificações</h2>
+  <p>Se você permitir, o app programa no seu próprio celular no máximo um lembrete por dia (por exemplo, quando seu presente diário está pronto ou começa uma corrida). Eles não são enviados de nenhum servidor. Você pode desativá-los quando quiser nas configurações do celular: no Android, <b>Configurações → Apps → Brujitos → Notificações</b>; no iPhone, <b>Ajustes → Notificações → Brujitos</b>.</p>
+
+  <h2>7. Quem recebe dados</h2>
+  <ul>
+    <li><b>Google LLC</b> (AdMob, Firebase e Google Play). Política: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Como o Google usa dados de apps que usam seus serviços: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</li>
+    <li><b>Apple Inc.</b> (App Store, compras, backups do iCloud e SKAdNetwork no iPhone). Política: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
+  </ul>
+  <p>O Firebase trabalha por nossa conta, e o AdMob e o Google Play também usam os dados segundo a política do Google. O Google se compromete, em seus termos de proteção de dados conosco, a proteger os dados com um nível igual ou maior que o desta política. A Apple trata os dados de compras e de backups diretamente com você, segundo sua própria política. Não passamos seus dados para mais ninguém.</p>
+
+  <h2>8. Para que usamos os dados e com qual base legal</h2>
+  <ul>
+    <li><b>Fazer funcionar o jogo e as compras:</b> fazem parte do serviço que você pede ao jogar ou comprar (execução de contrato).</li>
+    <li><b>Estatísticas:</b> nosso legítimo interesse em corrigir erros e melhorar o jogo, com dados sem nome.</li>
+    <li><b>Anúncios:</b> para financiar o jogo gratuito. Anúncios personalizados só com seu consentimento onde a lei exige, e no iPhone o rastreamento só acontece se você permitir (item 9).</li>
+    <li><b>Segurança:</b> nosso legítimo interesse em detectar fraudes com anúncios e compras.</li>
+  </ul>
+
+  <h2>9. Suas escolhas</h2>
+  <ul>
+    <li><b>iPhone, rastreamento:</b> na primeira vez que você abre o jogo, o iPhone pergunta se você permite que o Brujitos rastreie sua atividade em apps e sites de outras empresas. Se você disser que não, nem o AdMob nem o Firebase podem usar seu identificador de publicidade, e o jogo funciona igual. Você pode mudar isso quando quiser em <b>Ajustes → Privacidade e Segurança → Rastreamento</b>.</li>
+    <li><b>Espaço Econômico Europeu, Reino Unido e Suíça:</b> o app pede seu consentimento antes de mostrar anúncios personalizados. Você pode mudar sua escolha em <b>Ajustes → Privacidade dos anúncios</b>, dentro do jogo.</li>
+    <li><b>Android, ID de publicidade:</b> você pode redefini-lo ou excluí-lo, ou desativar a personalização de anúncios, em <b>Configurações → Privacidade → Anúncios</b> (ou <b>Google → Anúncios</b>, conforme o celular).</li>
+    <li>Você pode jogar sem permitir notificações.</li>
+  </ul>
+
+  <h2>10. Por quanto tempo os dados ficam guardados</h2>
+  <ul>
+    <li>Progresso no celular: até você desinstalar o app ou limpar os dados dele (e nos backups, até você apagá-los).</li>
+    <li>Estatísticas do Firebase: no máximo 14 meses.</li>
+    <li>Dados de publicidade e de compras: conforme os prazos do Google e da Apple, descritos em suas políticas.</li>
+  </ul>
+
+  <h2>11. Onde os dados são tratados</h2>
+  <p>O Google e a Apple podem tratar esses dados em servidores fora do seu país, inclusive nos Estados Unidos, com as garantias descritas em suas políticas de privacidade.</p>
+
+  <h2>12. Seus direitos e como apagar seus dados</h2>
+  <p>Onde quer que você more, pode nos pedir acesso, correção ou exclusão dos seus dados, se opor ao uso deles ou revogar seu consentimento. Assim:</p>
+  <ul>
+    <li><b>Progresso no celular:</b> desinstale o app. No Android, você também pode limpar os dados em <b>Configurações → Apps → Brujitos → Armazenamento</b>.</li>
+    <li><b>Backups:</b> apague-os na sua conta Google (Android) ou em <b>Ajustes → [seu nome] → iCloud</b> (iPhone).</li>
+    <li><b>Estatísticas:</b> envie um e-mail e nós as apagaremos. Como não sabemos quem você é, pediremos um dado que ajude a encontrá-las (por exemplo, a data em que você instalou o app e o modelo do seu celular).</li>
+    <li><b>Publicidade e rastreamento:</b> use as opções do item 9.</li>
+  </ul>
+  <p>Respondemos dúvidas em até 10 dias úteis e pedidos de correção ou exclusão em até 15 dias úteis. Se achar que não atendemos bem seu pedido, você também pode procurar a autoridade de proteção de dados do seu país.</p>
+
+  <h2>13. Conforme o seu país</h2>
+  <ul>
+    <li><b>Brasil (LGPD):</b> você tem os direitos do artigo 18 da LGPD, entre eles confirmar se tratamos seus dados, acessá-los, corrigi-los, anonimizá-los ou eliminá-los, levá-los a outro serviço, saber com quem são compartilhados e revogar seu consentimento. Você também pode procurar a ANPD. Nosso canal de atendimento é o e-mail de contato.</li>
+    <li><b>Colômbia (Lei 1581 de 2012):</b> como titular, você pode conhecer, atualizar e retificar seus dados, pedir prova da sua autorização, saber como são usados, revogar a autorização ou pedir a exclusão, e apresentar queixas à Superintendência de Indústria e Comércio (SIC) depois de falar conosco.</li>
+    <li><b>Espaço Econômico Europeu, Reino Unido e Suíça (RGPD):</b> além dos direitos do item 12, você tem direito à portabilidade e à limitação do tratamento, e pode reclamar à sua autoridade de proteção de dados.</li>
+    <li><b>Estados Unidos (Califórnia e outros estados com leis de privacidade):</b> não vendemos seus dados em troca de dinheiro. Segundo algumas dessas leis, os anúncios personalizados do AdMob podem contar como "compartilhar" dados para publicidade; você pode evitar isso negando o rastreamento no iPhone ou excluindo seu ID de publicidade no Android. Você também pode nos pedir para saber quais dados temos ou para apagá-los, e não será tratado de forma diferente por isso.</li>
+  </ul>
+
+  <h2>14. Crianças</h2>
+  <p>O app não é direcionado a menores de 13 anos, e não coletamos intencionalmente dados de menores dessa idade. Se você acha que uma criança nos enviou dados, escreva para nós e vamos apagá-los.</p>
+
+  <h2>15. Segurança</h2>
+  <p>Toda a comunicação com os serviços do Google e da Apple é criptografada (HTTPS), e não guardamos dados dos jogadores em servidores próprios.</p>
+
+  <h2>16. Mudanças</h2>
+  <p>Se mudarmos esta política, publicaremos a nova versão nesta mesma página com a data de atualização. Se a mudança for importante, também avisaremos dentro do jogo.</p>
+
+  <h2>17. Contato</h2>
+  <p>Brujo Games · Colômbia · <a href="mailto:kevincuero122007@gmail.com">kevincuero122007@gmail.com</a></p>
+  </section>
 </main>
 </body>
 </html>
