@@ -24,6 +24,9 @@
   .game p { margin: 0; color: var(--muted); }
   .pill { display: inline-block; margin-top: 10px; font-size: 14px; font-weight: 700; padding: 5px 12px; border-radius: 99px; background: var(--magic); color: #1a0b33; }
   .links { margin-top: 10px; font-size: 15px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 99px; background: var(--magic); color: #1a0b33; font-weight: 800; text-decoration: none; }
+  .btn.ghost { background: transparent; color: var(--magic); border: 2px solid var(--magic); }
   a { color: var(--magic); }
   footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
   @media (max-width: 480px) { .game { flex-direction: column; align-items: flex-start; } }
@@ -44,7 +47,8 @@
     <div>
       <h2>Montonera</h2>
       <p>Junta tu ejército, cruza puertas, mejora tus armas y gana batallas épicas.</p>
-      <span class="pill">Muy pronto en Google Play</span>
+      <span class="pill">Gratis en App Store y Google Play</span>
+      <div class="cta"><a class="btn" href="jugar/">Jugar gratis</a><a class="btn ghost" href="prensa/">Kit de prensa</a></div>
       <div class="links"><a href="privacidad.html">Política de privacidad</a></div>
     </div>
   </section>
