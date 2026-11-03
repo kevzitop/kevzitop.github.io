@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Montonera · Jugar gratis</title>
+<meta name="description" content="Montonera: junta la multitud más grande, gana batallas caóticas y patea al gigante. Gratis en iPhone y Android.">
+<meta property="og:title" content="Montonera: invita a UN amigo">
+<meta property="og:description" content="Junta la multitud más grande, gana batallas caóticas y patea al gigante. Gratis en iPhone y Android.">
+<meta property="og:image" content="https://kevzitop.github.io/montonera.png">
+<meta name="theme-color" content="#1a0b33">
+<style>
+  :root { --bg: #1a0b33; --card: #22113f; --ink: #f6f2ff; --muted: #b9addb; --line: #3a2768; --magic: #b8ff2e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: radial-gradient(900px 500px at 50% -10%, #4a20a0 0%, transparent 65%), var(--bg); color: var(--ink); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; }
+  main { width: 100%; max-width: 460px; padding: 40px 16px; text-align: center; }
+  img.icon { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 14px 40px rgba(0,0,0,.45); }
+  h1 { margin: 18px 0 4px; font-size: 44px; line-height: 1; font-weight: 900; }
+  p.tag { margin: 0 0 28px; color: var(--muted); }
+  a.btn { display: block; margin: 12px 0; padding: 16px; border-radius: 16px; font-weight: 800; font-size: 19px; text-decoration: none; }
+  a.ios { background: #fff; color: #111; }
+  a.android { background: var(--magic); color: var(--bg); }
+  .note { margin-top: 26px; font-size: 14px; color: var(--muted); }
+  .note a { color: var(--magic); }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="../montonera.png" alt="Ícono de Montonera">
+  <h1>Montonera</h1>
+  <p class="tag" id="tag">Invita a UN amigo… y que lleguen 9.000.</p>
+  <a class="btn ios" id="ios" href="https://apps.apple.com/app/id6826120370">Descargar en App Store</a>
+  <a class="btn android" id="android" href="https://play.google.com/store/apps/details?id=com.brujogames.montonera">Descargar en Google Play</a>
+  <p class="note" id="note">Gratis · Un juego de BRUJO, hecho en Colombia · <a href="../prensa/">Prensa</a></p>
+</main>
+<script>
+// Un solo enlace para todas las redes: abre la tienda que corresponde al teléfono.
+// ?c=tiktok (o instagram, youtube, whatsapp, creador...) marca de dónde vino la gente.
+(function () {
+  var APP_ID = '6826120370', PKG = 'com.brujogames.montonera';
+  var PT = '';   // "provider token" de App Store Connect (Analytics > Campañas); vacío = sin seguimiento por campaña
+  var q = new URLSearchParams(location.search), c = (q.get('c') || 'web').replace(/[^a-z0-9_-]/gi, '').slice(0, 40);
+  var ios = 'https://apps.apple.com/app/apple-store/id' + APP_ID + (PT ? '?pt=' + PT + '&ct=' + c + '&mt=8' : '');
+  var android = 'https://play.google.com/store/apps/details?id=' + PKG + '&referrer=' + encodeURIComponent('utm_source=' + c + '&utm_medium=social&utm_campaign=invita-un-amigo');
+  document.getElementById('ios').href = ios;
+  document.getElementById('android').href = android;
+  var lang = (navigator.language || 'es').slice(0, 2);
+  if (lang === 'en') {
+    document.documentElement.lang = 'en';
+    document.getElementById('tag').textContent = 'Bring ONE friend… and 9,000 show up.';
+    document.getElementById('ios').textContent = 'Download on the App Store';
+    document.getElementById('android').textContent = 'Get it on Google Play';
+    document.getElementById('note').innerHTML = 'Free · A game by BRUJO, made in Colombia · <a href="../prensa/">Press</a>';
+  } else if (lang === 'pt') {
+    document.documentElement.lang = 'pt';
+    document.getElementById('tag').textContent = 'Convide UM amigo… e chegam 9.000.';
+    document.getElementById('ios').textContent = 'Baixar na App Store';
+    document.getElementById('android').textContent = 'Disponível no Google Play';
+    document.getElementById('note').innerHTML = 'Grátis · Um jogo da BRUJO, feito na Colômbia · <a href="../prensa/">Imprensa</a>';
+  }
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+  if (q.get('quedarse') === null) {
+    if (isIOS) location.replace(ios);
+    else if (isAndroid) location.replace(android);
+  }
+})();
+</script>
+</body>
+</html>
